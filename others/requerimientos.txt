@@ -1,0 +1,28 @@
+ideas desde la pagina de aeropuerto araucania
+
+amazonas en la vista lineas aereas se quita, en su lugar agregar jet smart
+
+en el apartado de servicios turismo hay que confirmarlo, añadirlo solo al final
+
+cambiar informacion de todas las aerolineas, numeros de telefono y actualizar logo
+
+tomar fotos del aeropuerto para incorporar en la pagina
+
+agregar vista en servicio con nombre aeronautico
+
+crar vista con derechos y debers del pasajero o linkear la pagina en algun lugar dentro
+
+Agregar vuelos de entrada y salida Con la api : Avionio
+
+agregar servicios extras. actuales: Taxi, Transfer, RentACar, Estacionamiento, (turimos por confirmar) Añadir : Comida, Compras(Souvenir)
+
+en contacto con formulario, dar opcion a elegir entre reclamos, sugerencia, otros. estos mensajes con correo deben llegar a jonathan
+
+agregar proyecto de ampliacion en alguna vista existente o como nueva vista
+
+los destacados de la hoja de taxis concesionados 2023: en el 5.- alonso solo anotar a alonso con el numero, 7.- Jaime se anota con sus dos numeros-
+-.-10 falta el numero de pedro campusano, 11.- falta conseguir el numero de marco collao..... mientras falte 1 numero de telefono en mas de 1 persona, se anota el nombre de la primera
+
+
+
+coolors.co   sirve para generar una paleta de colors mejor 
