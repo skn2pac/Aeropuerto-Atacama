@@ -1,4 +1,4 @@
-* {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
   
 
 .navbar{
-    background-color: #59656F;
+    background-color: #114269;
 }
 .navbar-text,
 .navbar-brand,
@@ -40,7 +40,7 @@
 
 
 .page-footer {
-    background-color: #59656F;
+    background-color: #252525;
     color: white;
 }
 
@@ -58,4 +58,51 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
+
+/* Comidas */
+.cream-bg {
+    background-color: rgb(240, 237, 237);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card-img{
+    width: 200px;
+    height: 100px;
+    object-fit: fill;
+    border-bottom-right-radius: 0px;
+}
+
+/* Comidas 2 */
+
+
+/* Masthead banner en las paginas*/
+.masthead{
+    background-size: cover;
+    min-height: 35vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rbga(0,0,0,.2);
+}
+
+
+/* Carousel */
+
+.c-item{
+    height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+/* Navbar  */
+
+@media screen and (min-width:992px){
+    .nav-item {
+    line-height:80px;
+    }
+  }

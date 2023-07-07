@@ -13,52 +13,79 @@
     <main class="main">
         <!-- Header / Parte superior-->
         <header class="header">
-            <!-- NavBar / Menú de navegación-->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!-- Damos logo y texto al menu -->
-                  <a class="navbar-brand" href="#">
-                    <img src="img/avion png.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Aeropuerto Atacama
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-three-dots-vertical" style="color: white;;"></i>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Le damos las vista a navegar en el menu, inicio, Aerolineas, Emptresa, Servicios (servicios despliega un menu nuevo con varias opciones), Contacto -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="aerolineas.html">Aerolíneas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="empresa.html">Empresa</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Servicios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- Taxi, Transfer, RentACar, Estacionamiento, Comida, Compras -->
-                          <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
-                          <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
-                          <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
-                          <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
-                          <li><a class="dropdown-item" href="comida.html">Comida</a></li>
-                          <li><a class="dropdown-item" href="compras.html">Compras</a></li>
-                          <li><a class="dropdown-item" href="turismo.html">Turismo(* confirmar)</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
-                      </li>
+          <!-- NavBar / Menú de navegación-->
+          <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
+            <div class="container-fluid">
+              <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="aerolineas.html">Aerolíneas</a>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link mx-2" href="index.html">
+                      <img src="img/avion png.png" height="80" width="100px" />
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
+                      <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
+                      <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
+                      <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
+                      <li><a class="dropdown-item" href="comida.html">Comida</a></li>
+                      <li><a class="dropdown-item" href="compras.html">Compras</a></li>
+                      <li><a class="dropdown-item" href="turismo.html">Turismo(Por Confirmar)</a></li>
                     </ul>
-                  </div>
-                </div>
-            </nav>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-        </header>
+      </header>
+
+      <!-- Banner -->
+      <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center" style="background-image: url('img/taxis-banner.jpg');
+                  background-position: center;
+              background-size:cover;
+              background-repeat:no-repeat;
+              filter: brightness(0.8);">
+        <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" style=" backdrop-filter: blur(6px) saturate(102%);
+                  -webkit-backdrop-filter: blur(6px) saturate(102%);
+                  background-color: rgba(255, 255, 255, 0.45);
+                  border-radius: 12px;
+                  border: 1px solid rgba(209, 213, 219, 0.3);">
+          <div class="lc-block d-flex justify-content-center">
+            <div editable="rich">
+              <h2 class="fw-bolder display-3">Taxis Concesionados</h2>
+            </div>
+          </div>
+          <div class="lc-block d-flex">
+            <div editable="rich">
+              <p class="lead" style="font-weight: bold;">Nuestro servicio de taxis en el aeropuerto ofrece transporte seguro y confiable, tarifas transparentes, comodidad y conductores amigables. Disponibles, te brindamos un servicio puerta a puerta para que llegues a tu destino sin problemas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
         <!-- Contenedor con los taxistas concesionados-->
         <div class="container" style="padding: 100px;">
             <div class="row" style="box-shadow: 4px 4px 4px rgba(56, 56, 56,0.2);">
@@ -269,7 +296,7 @@
                     <p class="h5 mb-4" style="font-weight: 600">Aeropuerto Atacama</p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                       <li class="my-2">
-                        <a class="" href="https://www.dgac.gob.cl/">Dirección General de Aeronáutica Civil</a>
+                        <a class="" href="https://www.dgac.gob.cl/" target="_blank">Dirección General de Aeronáutica Civil</a>
                       </li>
                       <li class="my-2">
                         <a class="" href="empresa.html">Acerca de nosotros</a>
@@ -290,13 +317,13 @@
                     <p class="h5 mb-4" style="font-weight: 600">Intereses</p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                       <li class="my-2">
-                        <a class="" href="https://www.mop.gob.cl/">Ministerio de Obras Públicas</a>
+                        <a class="" href="https://www.mop.gob.cl/" target="_blank">Ministerio de Obras Públicas</a>
                       </li>
                       <li class="my-2">
-                        <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx">Dirección de Aeropuertos</a>
+                        <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx" target="_blank">Dirección de Aeropuertos</a>
                       </li>
                       <li class="my-2">
-                        <a class="" href="https://www.mop.gob.cl/category/direccion/direccion-general-de-concesiones-de-obras-publicas/">Coordinación de Concesiones de Obras Públicas</a>
+                        <a class="" href="https://www.mop.gob.cl/category/direccion/direccion-general-de-concesiones-de-obras-publicas/" target="_blank">Coordinación de Concesiones de Obras Públicas</a>
                       </li>
                     </ul>
                   </div>

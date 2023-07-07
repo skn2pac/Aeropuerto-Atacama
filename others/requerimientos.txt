@@ -26,3 +26,5 @@ los destacados de la hoja de taxis concesionados 2023: en el 5.- alonso solo ano
 
 
 coolors.co   sirve para generar una paleta de colors mejor 
+
+en el banner slider inicial colocar una foto del aeropuerto, en la empresa camiar el nombre a Conccesionaria y agregar inforacion de la pagina antigua incluyedo cosas nuevas

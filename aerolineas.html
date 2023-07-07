@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/aerolineas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
@@ -13,95 +14,135 @@
     <main class="main">
         <!-- Header / Parte superior-->
         <header class="header">
-            <!-- NavBar / Menú de navegación-->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!-- Damos logo y texto al menu -->
-                  <a class="navbar-brand" href="#">
-                    <img src="img/avion png.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Aeropuerto Atacama
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-three-dots-vertical" style="color: white;;"></i>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Le damos las vista a navegar en el menu, inicio, Aerolineas, Emptresa, Servicios (servicios despliega un menu nuevo con varias opciones), Contacto -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="aerolineas.html">Aerolíneas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="empresa.html">Empresa</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Servicios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- Taxi, Transfer, RentACar, Estacionamiento, Comida, Compras -->
-                        <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
-                        <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
-                        <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
-                        <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
-                        <li><a class="dropdown-item" href="comida.html">Comida</a></li>
-                        <li><a class="dropdown-item" href="compras.html">Compras</a></li>
-                        <li><a class="dropdown-item" href="turismo.html">Turismo(* confirmar)</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
-                      </li>
+          <!-- NavBar / Menú de navegación-->
+          <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
+            <div class="container-fluid">
+              <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="aerolineas.html">Aerolíneas</a>
+                  </li>
+                  <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link mx-2" href="index.html">
+                      <img src="img/avion png.png" height="80" width="100px" />
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
+                      <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
+                      <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
+                      <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
+                      <li><a class="dropdown-item" href="comida.html">Comida</a></li>
+                      <li><a class="dropdown-item" href="compras.html">Compras</a></li>
+                      <li><a class="dropdown-item" href="turismo.html">Turismo(Por Confirmar)</a></li>
                     </ul>
-                  </div>
-                </div>
-            </nav>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-        </header>
-        <!-- Contenedor con las aerolineas-->
-        <div class="contenedor_aerolineas">
-          <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/Sky_Airline_Logo.svg" class="card-img-top" alt="">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins aago</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/logo-latam-airlines.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/Logo_JetSmart.svg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
+      </header>
+
+      <!-- Banner -->
+      <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center" style="background-image: url('img/Aerolineas-banner.jpeg');
+            background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        filter: brightness(0.7);">
+        <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" style=" backdrop-filter: blur(6px) saturate(102%);
+            -webkit-backdrop-filter: blur(6px) saturate(102%);
+            background-color: rgba(255, 255, 255, 0.45);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);">
+          <div class="lc-block d-flex justify-content-center">
+            <div editable="rich">
+              <h2 class="fw-bolder display-3">Aerolíneas</h2>
+            </div>
+          </div>
+          <div class="lc-block d-flex">
+            <div editable="rich">
+              <p class="lead" style="font-weight: bold;">¡Bienvenido a nuestros servicios de aerolínea! Nos enorgullece ofrecerte una experiencia de viaje excepcional. Aquí tienes las aerolíneas operativas en el Aeropuerto de Atacama.</p>
             </div>
           </div>
         </div>
+      </div>
+
+
+        <!-- Contenedor con las aerolineas-->
+        <!--  Test  -->
+        <section class="light">
+          <div class="container py-2">
+
+              <article class="postcard light red">
+                <a class="postcard__img_link" href="https://www.jetsmart.com/cl/es/" target="_blank">
+                    <img class="postcard__img" src="img/aerolineas/Logo_JetSmart.svg" alt="jet-smart-img" />
+                </a>
+                <div class="postcard__text t-dark">
+                    <h1 class="postcard__title red"><a href="#">Jet SMART</a></h1>
+                    <!-- <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                        </time>
+                    </div> -->
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!  <br><br> Contactos: <br><span>+569 6666 6666</span></div>
+                </div>
+            </article>
+
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="https://www.skyairline.com/chile" target="_blank">
+                  <img class="postcard__img" src="img/aerolineas/Sky_Airline_Logo.svg" alt="sky-airline-img" />
+              </a>
+              <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green"><a href="#">SKY Airline</a></h1>
+                  <div class="postcard__subtitle small">
+                      <!-- <time datetime="2020-05-25 12:00:00">
+                          <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                      </time> -->
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Sky Airline es una aerolínea chilena de bajo costo fundada en 2001. Es reconocida por ofrecer tarifas competitivas y opciones económicas de vuelo. Opera vuelos nacionales e internacionales en América del Sur, conectando diversas ciudades en Chile, Argentina, Perú, Uruguay y Brasil, entre otros países.  <br><br> Contactos: <br><span>+569 6666 6666</span></div>
+              </div>
+          </article>
+
+              <article class="postcard light blue">
+                  <a class="postcard__img_link" href="https://www.latamairlines.com/cl/es" target="_blank">
+                      <img class="postcard__img" src="img/aerolineas/logo-latam-airlines.png" alt="latam-airline-logo" />
+                  </a>
+                  <div class="postcard__text t-dark">
+                      <h1 class="postcard__title blue"><a href="#">LATAM Airlines</a></h1>
+                      <div class="postcard__subtitle small">
+                          <!-- <time datetime="2020-05-25 12:00:00">
+                              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                          </time> -->
+                      </div>
+                      <div class="postcard__bar"></div>
+                      <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!. <br><br> Contactos: <br><span>+569 6666 6666</span></div>
+                  </div>
+              </article>
+
+
+          </div>
+      </section>
+
 
 <!-- Footer -->
 <div class="blockcode">
