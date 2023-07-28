@@ -1,75 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Contacto</title>
 </head>
+
 <body>
-    <main class="main">
-        <!-- Header / Parte superior-->
-        <header class="header">
-            <!-- NavBar / Menú de navegación-->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!-- Damos logo y texto al menu -->
-                  <a class="navbar-brand" href="#">
-                    <img src="img/avion png.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> Aeropuerto Atacama
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-three-dots-vertical" style="color: white;;"></i>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Le damos las vista a navegar en el menu, inicio, Aerolineas, Emptresa, Servicios (servicios despliega un menu nuevo con varias opciones), Contacto -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="aerolineas.html">Aerolíneas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="empresa.html">Empresa</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Servicios
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- Taxi, Transfer, RentACar, Estacionamiento, Comida, Compras -->
-                        <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
-                        <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
-                        <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
-                        <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
-                        <li><a class="dropdown-item" href="comida.html">Comida</a></li>
-                        <li><a class="dropdown-item" href="compras.html">Compras</a></li>
-                        <li><a class="dropdown-item" href="turismo.html">Turismo(* confirmar)</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
+  <main class="main">
+    <!-- Header / Parte superior-->
+    <header class="header">
+      <!-- NavBar / Menú de navegación-->
+      <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
+        <div class="container-fluid">
+          <a class="navbar-brand d-block d-lg-none" href="#">
+            <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        </header>
-        <!-- Contenedor con las aerolineas-->
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="aerolineas.html">Aerolíneas</a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link mx-2" href="index.html">
+                  <img src="img/avion png.png" height="80" width="100px" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
+                  <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
+                  <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
+                  <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
+                  <li><a class="dropdown-item" href="comida.html">Comida</a></li>
+                  <li><a class="dropdown-item" href="compras.html">Compras</a></li>
+                  <li><a class="dropdown-item" href="turismo.html">Turismo(Por Confirmar)</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner alientacion-->
+
+    <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center" style="background-image: url('img/soporte\ infor.jpg');
+        background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        filter: brightness(0.7);">
+      <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" style=" backdrop-filter: blur(6px) saturate(102%);
+        -webkit-backdrop-filter: blur(6px) saturate(102%);
+        background-color: rgba(255, 255, 255, 0.45);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);">
+        <div class="lc-block d-flex justify-content-center">
+          <div editable="rich">
+            <h2 class="fw-bolder display-3">Contactanos</h2>
+          </div>
+        </div>
+        <div class="lc-block d-flex">
+          <div editable="rich">
+            <p class="lead" style="font-weight: bold;">¡Contáctanos ahora para resolver cualquier duda o consulta que tengas!
+              Nuestra dedicada y amable equipo de atención al cliente está listo para ayudarte en todo momento. Ya sea a través de
+              nuestro formulario en línea, correo electrónico o teléfono, estamos aquí para brindarte la asistencia que necesitas.
+              ¡No dudes en comunicarte con nosotros y experimentar un servicio excepcional! Tu satisfacción es nuestra prioridad
+              número uno.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores non beatae illo, quod cumque delectus tenetur cum fugit asperiores ratione? Ad eaque eius et ipsam delectus amet neque at perferendis.
-                Deserunt repellendus ullam nobis quas ipsam blanditiis at perspiciatis. Veniam nisi necessitatibus velit commodi maxime, molestiae similique. Rerum, nisi saepe! Ipsa, molestiae recusandae. Accusamus dolorem blanditiis praesentium, tempora eligendi porro?
-            </p>
-        </footer>
 
-    </main>
+    <!-- Soporte formulario -->
+    <div class="container">
+      <form action="https://formsubmit.co/skn2pac@gmail.com" method="POST"  class="row g-3 needs-validation" novalidate>
+        <div class="col-md-7">
+          <div class="mb-3">
+            <label for="nameId" class="form-label">Nombre *</label>
+            <input type="text" name="Nombre" class="form-control" id="nameId" placeholder="Ingresa tu Nombre" required>
+            <div class="valid-feedback">
+              Todo bien
+            </div>
+            <div class="invalid-feedback">
+              Es necesario ingresar un nombre
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="emailId" class="form-label">Email *</label>
+            <input type="email" name="Email" class="form-control" id="emailId" placeholder="Ingresa tu email" required>
+            <div class="valid-feedback">
+              Todo bien
+            </div>
+            <div class="invalid-feedback">
+              Es necesario ingresar un email
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="numberId" class="form-label">Número de Contacto*</label>
+            <input type="text" name="Numero" class="form-control" id="numberId" placeholder="Ingresa tu Número" required>
+            <div class="valid-feedback">
+              Todo bien
+            </div>
+            <div class="invalid-feedback">
+              Es necesario ingresar un número
+            </div>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" id="select" aria-label="Default select example">
+              <option selected>Motivo</option>
+              <option value="1">Felicitaciones</option>
+              <option value="2">Sugerencias</option>
+              <option value="3">Reclamos</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="msgId" class="form-label">Mensaje</label>
+            <textarea name="Mensaje" class="form-control"  rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envíar</button>
+
+          <input type="hidden" name="_next" value="http://127.0.0.1:5501/contacto.html">
+
+        </div>
+
+
+        <div class="col-md-5">
+          <h4>Contactanos</h4><hr>
+          <div class="mt-5">
+            <div class="d-flex">
+              <i class="bi bi bi bi-geo-alt-fill"></i>
+              <p>Dirección : Ruta 5 Norte KM.856, Caldera, Atacama, Chile.</p>
+            </div><hr>
+            <div class="d-flex">
+              <i class="bi bi-telephone-fill"></i>
+              <p>Contacto : +569 1234 5678</p>
+            </div><hr>
+            <div class="d-flex">
+              <i class="bi bi-envelope-fill"></i>
+              <p>Correo : aero@aeropuertoatacama.cl.</p>
+            </div><hr>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="blockcode">
+
+      <footer class="page-footer">
+        <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+          <div class="d-flex flex-wrap justify-content-between">
+            <div>
+              <a href="/#" class="d-flex align-items-center p-0">
+                <img alt="logo" src="img/avion png.png" width="80px" />
+                <span class="ms-3 h5 font-weight-bold">Aeropuerto Atacama</span>
+              </a>
+              <p class="my-3" style="width: 250px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo quos minus et illum provident
+                alias deleniti optio maxime laborum laboriosam modi voluptatibus placeat veniam nihil, unde
+                exercitationem pariatur doloribus!
+              </p>
+            </div>
+            <div>
+              <p class="h5 mb-4" style="font-weight: 600">Aeropuerto Atacama</p>
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="" href="https://www.dgac.gob.cl/" target="_blank">Dirección General de Aeronáutica Civil</a>
+                </li>
+                <li class="my-2">
+                  <a class="" href="empresa.html">Acerca de nosotros</a>
+                </li>
+                <li class="my-2"><a class="" href="aerolineas.html">Líneas Aéreas</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="h5 mb-4" style="font-weight: 600">Soporte</p>
+              <ul class="p-0" style="list-style: none;">
+                <li class="my-2">
+                  <!-- <a class="text-dark" href="contacto.html">¿Reclamos o Sugerencias? <br> <span style="text-decoration: none;">No dudes en contactarnos.</span></a> -->
+                  <p class="">¿Reclamos o Sugerencias? <br> <span><a href="contacto.html" class="">No dudes en
+                        Contactarnos.</a></span></p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="h5 mb-4" style="font-weight: 600">Intereses</p>
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="" href="https://www.mop.gob.cl/" target="_blank">Ministerio de Obras Públicas</a>
+                </li>
+                <li class="my-2">
+                  <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx" target="_blank">Dirección de
+                    Aeropuertos</a>
+                </li>
+                <li class="my-2">
+                  <a class=""
+                    href="https://www.mop.gob.cl/category/direccion/direccion-general-de-concesiones-de-obras-publicas/"
+                    target="_blank">Coordinación de Concesiones de Obras Públicas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <small>&copy; Sociedad Consesionaria Aeropuerto de Atacama S.A, 2023. Todos los Derechos Reservados.</small>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+    </script>
+  </main>
 </body>
+
 </html>
