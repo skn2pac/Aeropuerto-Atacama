@@ -1,14 +1,15 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-  }
-  
+}
 
-.navbar{
+
+.navbar {
     background-color: #114269;
 }
+
 .navbar-text,
 .navbar-brand,
 .nav-link.active {
@@ -32,6 +33,7 @@ body{
     justify-content: center;
     display: flex;
 }
+
 .footer p {
     color: white;
     text-align: center;
@@ -44,16 +46,16 @@ body{
     color: white;
 }
 
-.page-footer a{
+.page-footer a {
     color: white;
 }
 
-.page-footer a:hover{
+.page-footer a:hover {
     color: #DDBDD5;
-    
+
 }
 
-.contenedor_aerolineas{
+.contenedor_aerolineas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +70,7 @@ body{
     padding-bottom: 2rem;
 }
 
-.card-img{
+.card-img {
     width: 200px;
     height: 100px;
     object-fit: fill;
@@ -79,30 +81,55 @@ body{
 
 
 /* Masthead banner en las paginas*/
-.masthead{
+.masthead {
     background-size: cover;
     min-height: 35vh;
     position: relative;
     color: white;
-    text-shadow: 2px 2px 2px rbga(0,0,0,.2);
+    text-shadow: 2px 2px 2px rbga(0, 0, 0, .2);
 }
 
 
 /* Carousel */
 
-.c-item{
+.c-item {
     height: 480px;
 }
 
-.c-img{
+.c-img {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6);
 }
+
 /* Navbar  */
 
-@media screen and (min-width:992px){
+
+
+/* Transfer */
+p.pestacionamiento {
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+/* CONCESIONARIA */
+
+h2.title {
+    text-align: center;
+}
+
+p.aboutus {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+hr.hr-contacto {
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width:992px) {
     .nav-item {
-    line-height:80px;
+        line-height: 80px;
     }
-  }
+}
