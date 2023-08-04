@@ -12,7 +12,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-  <title>Transfer</title>
+  <title>Concesionaria</title>
 </head>
 <!-- -->
 
@@ -21,45 +21,39 @@
     <!-- Header / Parte superior-->
     <header class="header">
       <!-- NavBar / Menú de navegación-->
-      <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
-        <div class="container-fluid">
-          <a class="navbar-brand d-block d-lg-none" href="#">
-            <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark npad" style="padding: 20px;">
+        <div class="container">
+          <a class="navbar-brand d-md-none d-xs-block py-3" href="#">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto ">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link mx-2" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-2" href="aerolineas.html">Aerolíneas</a>
               </li>
-              <li class="nav-item d-none d-lg-block">
-                <a class="nav-link mx-2" href="index.html">
-                  <img src="img/avion png.png" height="80" width="100px" />
-                </a>
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" href="empresa.html">Concesionaria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="empresa.html">Empresa</a>
+                <a class="nav-link mx-2 " href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
                   <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
                   <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
                   <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
                   <li><a class="dropdown-item" href="comida.html">Comida</a></li>
-                  <li><a class="dropdown-item" href="compras.html">Compras</a></li>
-                  <li><a class="dropdown-item" href="turismo.html">Turismo(Por Confirmar)</a></li>
                 </ul>
               </li>
             </ul>
@@ -70,16 +64,9 @@
     <!-- Contenedor de transfer-->
 
     <!--Banner del Transfer -->
-    <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center" style="background-image: url('img/estacionamiento-banner.jpeg');
-            background-position: center;
-        background-size:cover;
-        background-repeat:no-repeat;
-        filter: brightness(0.7);">
-      <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" style=" backdrop-filter: blur(6px) saturate(102%);
-            -webkit-backdrop-filter: blur(6px) saturate(102%);
-            background-color: rgba(255, 255, 255, 0.45);
-            border-radius: 12px;
-            border: 1px solid rgba(209, 213, 219, 0.3);">
+    <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center bannerin"
+      style="background-image: url('img/estacionamiento-banner.jpeg');">
+      <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12 banner">
         <div class="lc-block d-flex justify-content-center">
           <div editable="rich">
             <h2 class="fw-bolder display-3">Concesionaria</h2>
@@ -87,11 +74,11 @@
         </div>
         <div class="lc-block d-flex">
           <div editable="rich">
-            <p class="lead" style="font-weight: bold;">El servicio de transfer en un aeropuerto es un transporte
-              conveniente
-              y confiable que facilita el traslado de pasajeros desde o hacia el aeropuerto. Ofrece vehículos cómodos,
-              choferes profesionales, puntualidad y flexibilidad en los horarios. Ahorra tiempo y reduce el estrés del
-              viaje.</p>
+            <p class="lead" style="font-weight: bold;">¡Bienvenidos al Aeropuerto de Atacama! Somos una concesionaria
+              comprometida con brindar una experiencia única y segura a todos nuestros pasajeros. Descubre nuestras
+              modernas instalaciones, servicios de calidad y conexiones a destinos fascinantes. ¡Viajar nunca había sido
+              tan emocionante! Visítanos y déjanos ser tu puerta de entrada a nuevas aventuras en la región norte de
+              Chile. ¡Te esperamos con los brazos abiertos!</p>
           </div>
         </div>
       </div>
@@ -152,25 +139,24 @@
 
     <!-- Footer -->
     <div class="blockcode">
+
       <footer class="page-footer">
         <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
           <div class="d-flex flex-wrap justify-content-between">
             <div>
               <a href="/#" class="d-flex align-items-center p-0">
-                <img alt="logo" src="img/avion png.png" width="80px" />
                 <span class="ms-3 h5 font-weight-bold">Aeropuerto Atacama</span>
               </a>
               <p class="my-3" style="width: 250px">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo quos minus et illum provident
-                alias deleniti optio maxime laborum laboriosam modi voluptatibus placeat veniam nihil, unde
-                exercitationem pariatur doloribus!
+                Dirección : Ruta 5 Norte KM.856, Caldera, Atacama, Chile.
               </p>
             </div>
             <div>
               <p class="h5 mb-4" style="font-weight: 600">Aeropuerto Atacama</p>
               <ul class="p-0" style="list-style: none; cursor: pointer">
                 <li class="my-2">
-                  <a class="" href="https://www.dgac.gob.cl/" target="_blank">Dirección General de Aeronáutica Civil</a>
+                  <a class="" href="https://www.dgac.gob.cl/" target="_blank">Dirección General de Aeronáutica
+                    Civil</a>
                 </li>
                 <li class="my-2">
                   <a class="" href="empresa.html">Acerca de nosotros</a>
@@ -182,7 +168,6 @@
               <p class="h5 mb-4" style="font-weight: 600">Soporte</p>
               <ul class="p-0" style="list-style: none;">
                 <li class="my-2">
-                  <!-- <a class="text-dark" href="contacto.html">¿Reclamos o Sugerencias? <br> <span style="text-decoration: none;">No dudes en contactarnos.</span></a> -->
                   <p class="">¿Reclamos o Sugerencias? <br> <span><a href="contacto.html" class="">No dudes en
                         Contactarnos.</a></span></p>
                 </li>
@@ -195,7 +180,8 @@
                   <a class="" href="https://www.mop.gob.cl/" target="_blank">Ministerio de Obras Públicas</a>
                 </li>
                 <li class="my-2">
-                  <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx" target="_blank">Dirección de
+                  <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx" target="_blank">Dirección
+                    de
                     Aeropuertos</a>
                 </li>
                 <li class="my-2">
@@ -207,7 +193,8 @@
             </div>
           </div>
           <div class="text-center mt-4">
-            <small>&copy; Sociedad Consesionaria Aeropuerto de Atacama S.A, 2023. Todos los Derechos Reservados.</small>
+            <small>&copy; Sociedad Consesionaria Aeropuerto de Atacama S.A, 2023. Todos los Derechos
+              Reservados.</small>
           </div>
         </div>
       </footer>

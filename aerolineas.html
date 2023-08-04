@@ -21,44 +21,39 @@
     <!-- Header / Parte superior-->
     <header class="header">
       <!-- NavBar / Menú de navegación-->
-      <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
-        <div class="container-fluid">
-          <a class="navbar-brand d-block d-lg-none" href="#">
-            <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding: 20px;">
+        <div class="container">
+          <a class="navbar-brand d-md-none d-xs-block py-3" href="#">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto ">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link mx-2" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="aerolineas.html">Aerolíneas</a>
-              </li>
-              <li class="nav-item d-none d-lg-block">
-                <a class="nav-link mx-2" href="index.html">
-                  <img src="img/avion png.png" height="80" width="100px" />
-                </a>
+                <a class="nav-link mx-2 active" href="aerolineas.html">Aerolíneas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-2" href="empresa.html">Empresa</a>
+                <a class="nav-link mx-2" href="empresa.html">Concesionaria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 " href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="taxis.html">Taxis Concesionados</a></li>
                   <li><a class="dropdown-item" href="transfer.html">Transfer</a></li>
                   <li><a class="dropdown-item" href="rentacar.html">Rent a Car</a></li>
                   <li><a class="dropdown-item" href="estacionamiento.html">Estacionamiento</a></li>
                   <li><a class="dropdown-item" href="comida.html">Comida</a></li>
-                  <li><a class="dropdown-item" href="compras.html">Compras</a></li>
-                  <li><a class="dropdown-item" href="turismo.html">Turismo(Por Confirmar)</a></li>
                 </ul>
               </li>
             </ul>
@@ -68,16 +63,9 @@
     </header>
 
     <!-- Banner -->
-    <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center" style="background-image: url('img/Aerolineas-banner.jpeg');
-            background-position: center;
-        background-size:cover;
-        background-repeat:no-repeat;
-        filter: brightness(0.7);">
-      <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" style=" backdrop-filter: blur(6px) saturate(102%);
-            -webkit-backdrop-filter: blur(6px) saturate(102%);
-            background-color: rgba(255, 255, 255, 0.45);
-            border-radius: 12px;
-            border: 1px solid rgba(209, 213, 219, 0.3);">
+    <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center bannerin"
+      style="background-image: url('img/Aerolineas-banner.jpeg');">
+      <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12 banner">
         <div class="lc-block d-flex justify-content-center">
           <div editable="rich">
             <h2 class="fw-bolder display-3">Aerolíneas</h2>
@@ -105,17 +93,15 @@
           </a>
           <div class="postcard__text t-dark">
             <h1 class="postcard__title red"><a href="#">Jet SMART</a></h1>
-            <!-- <div class="postcard__subtitle small">
-                        <time datetime="2020-05-25 12:00:00">
-                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                        </time>
-                    </div> -->
             <div class="postcard__bar"></div>
-            <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
-              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
-              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
-              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos! <br><br>
-              Contactos: <br><span>+569 6666 6666</span></div>
+            <div class="postcard__preview-txt">
+              JetSMART es una aerolínea de bajo costo con sede en Chile. Fundada en 2017, se especializa en vuelos
+              económicos dentro de Chile y otros países de Sudamérica, ofreciendo una amplia gama de destinos a precios
+              competitivos. Con una flota moderna y una estrategia de bajo costo, se ha convertido en una opción popular
+              para viajeros que buscan tarifas asequibles en la región.<br><br>
+              Contactos: <br><a href="https://jetsmart.com/cl/">www.jetsmart.com/cl/</a> <br><span>600 600 1311 <br> +56
+                552 532 517 <br> +562 2731 8787</span>
+            </div>
           </div>
         </article>
 
@@ -125,16 +111,14 @@
           </a>
           <div class="postcard__text t-dark">
             <h1 class="postcard__title green"><a href="#">SKY Airline</a></h1>
-            <div class="postcard__subtitle small">
-              <!-- <time datetime="2020-05-25 12:00:00">
-                          <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                      </time> -->
-            </div>
             <div class="postcard__bar"></div>
             <div class="postcard__preview-txt">Sky Airline es una aerolínea chilena de bajo costo fundada en 2001. Es
               reconocida por ofrecer tarifas competitivas y opciones económicas de vuelo. Opera vuelos nacionales e
               internacionales en América del Sur, conectando diversas ciudades en Chile, Argentina, Perú, Uruguay y
-              Brasil, entre otros países. <br><br> Contactos: <br><span>+569 6666 6666</span></div>
+              Brasil, entre otros países. <br><br> Contactos: <br><a
+                href="https://www.skyairline.com/chile">www.skyairline.com/chile</a>
+              <br><span>600 600 3555</span>
+            </div>
           </div>
         </article>
 
@@ -144,17 +128,15 @@
           </a>
           <div class="postcard__text t-dark">
             <h1 class="postcard__title blue"><a href="#">LATAM Airlines</a></h1>
-            <div class="postcard__subtitle small">
-              <!-- <time datetime="2020-05-25 12:00:00">
-                              <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                          </time> -->
-            </div>
             <div class="postcard__bar"></div>
-            <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
-              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
-              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
-              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!. <br><br>
-              Contactos: <br><span>+569 6666 6666</span></div>
+            <div class="postcard__preview-txt">LATAM Airlines es una importante aerolínea latinoamericana, resultado de
+              la fusión entre LAN Airlines de Chile y TAM Airlines de Brasil en 2012. Ofrece vuelos domésticos e
+              internacionales con una amplia red de destinos en Sudamérica, Norteamérica, Europa y Oceanía. Reconocida
+              por su moderna flota, servicios de calidad y puntualidad, es una opción popular para viajeros de negocios
+              y turistas en la región.<br><br>
+              Contactos: <br><a href="https://jetsmart.com/cl/es/">www.jetsmart.com</a><br><span>600 526 2000 <br> +56 2
+                2579 8990</span>
+            </div>
           </div>
         </article>
 
@@ -171,19 +153,18 @@
           <div class="d-flex flex-wrap justify-content-between">
             <div>
               <a href="/#" class="d-flex align-items-center p-0">
-                <img alt="logo" src="img/avion png.png" width="80px" />
                 <span class="ms-3 h5 font-weight-bold">Aeropuerto Atacama</span>
               </a>
               <p class="my-3" style="width: 250px">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo quos minus et illum provident
-                alias
+                Dirección : Ruta 5 Norte KM.856, Caldera, Atacama, Chile.
               </p>
             </div>
             <div>
               <p class="h5 mb-4" style="font-weight: 600">Aeropuerto Atacama</p>
               <ul class="p-0" style="list-style: none; cursor: pointer">
                 <li class="my-2">
-                  <a class="" href="https://www.dgac.gob.cl/">Dirección General de Aeronáutica Civil</a>
+                  <a class="" href="https://www.dgac.gob.cl/" target="_blank">Dirección General de Aeronáutica
+                    Civil</a>
                 </li>
                 <li class="my-2">
                   <a class="" href="empresa.html">Acerca de nosotros</a>
@@ -195,7 +176,6 @@
               <p class="h5 mb-4" style="font-weight: 600">Soporte</p>
               <ul class="p-0" style="list-style: none;">
                 <li class="my-2">
-                  <!-- <a class="text-dark" href="contacto.html">¿Reclamos o Sugerencias? <br> <span style="text-decoration: none;">No dudes en contactarnos.</span></a> -->
                   <p class="">¿Reclamos o Sugerencias? <br> <span><a href="contacto.html" class="">No dudes en
                         Contactarnos.</a></span></p>
                 </li>
@@ -205,32 +185,24 @@
               <p class="h5 mb-4" style="font-weight: 600">Intereses</p>
               <ul class="p-0" style="list-style: none; cursor: pointer">
                 <li class="my-2">
-                  <a class="" href="https://www.mop.gob.cl/">Ministerio de Obras Públicas</a>
+                  <a class="" href="https://www.mop.gob.cl/" target="_blank">Ministerio de Obras Públicas</a>
                 </li>
                 <li class="my-2">
-                  <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx">Dirección de Aeropuertos</a>
+                  <a class="" href="https://aeropuertos.mop.gob.cl/Paginas/default.aspx" target="_blank">Dirección
+                    de
+                    Aeropuertos</a>
                 </li>
                 <li class="my-2">
                   <a class=""
-                    href="https://www.mop.gob.cl/category/direccion/direccion-general-de-concesiones-de-obras-publicas/">Coordinación
-                    de Concesiones de Obras Públicas</a>
+                    href="https://www.mop.gob.cl/category/direccion/direccion-general-de-concesiones-de-obras-publicas/"
+                    target="_blank">Coordinación de Concesiones de Obras Públicas</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="text-center mt-4">
-            <div class="mb-4">
-              <button class="btn btn-dark btn-flat p-2">
-                <i class="fa fa-facebook"></i>
-              </button>
-              <button class="btn btn-dark btn-flat p-2">
-                <i class="fa fa-twitter"></i>
-              </button>
-              <button class="btn btn-dark btn-flat p-2">
-                <i class="fa fa-instagram"></i>
-              </button>
-            </div>
-            <small>&copy; Sociedad Consesionaria Aeropuerto de Atacama S.A, 2023. Todos los Derechos Reservados.</small>
+            <small>&copy; Sociedad Consesionaria Aeropuerto de Atacama S.A, 2023. Todos los Derechos
+              Reservados.</small>
           </div>
         </div>
       </footer>
